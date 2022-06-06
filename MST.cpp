@@ -309,7 +309,7 @@ bool graph_connected(Graph const & graph) {
 void initialize(Graph & g) {
     for(size_t i = 1; i < g.vertices / 2; i += g.vertices / 8) {
         for(size_t j = 0; j + i < g.vertices; j += i) {
-            g.addEdge(j, j + i, i + j);
+            g.addEdge(j, j + i, i + j + 1);
         }
     }
 }

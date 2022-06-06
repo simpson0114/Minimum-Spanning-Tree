@@ -246,7 +246,7 @@ class Graph :
     def initialize(self) :
         for i in range(int(self.vertices / 2)):
             for j in range(self.vertices - i):
-                self.addEdge(j, j + i, i + j)
+                self.addEdge(j, j + i, i + j + 1)
 
 
 def main() :
